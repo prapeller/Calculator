@@ -44,10 +44,15 @@ public class Calculator {
 		number = input.split("\\s");
 		
 		Number firstNumber = new Number(number[0]);
-		System.out.println(firstNumber.isArabic());
-		System.out.println(firstNumber.isRoman());
 		Number secondNumber = new Number(number[2]);
 		operation = number[1].charAt(0);
+		
+		a=firstNumber.getIndex();
+		System.out.println(a);
+		
+		b=secondNumber.getIndex();
+		System.out.println(b);
+		
 		if (firstNumber.isArabic() && secondNumber.isArabic()) {
 			numbersAreArabic = true;
 			
@@ -56,6 +61,7 @@ public class Calculator {
 		if (firstNumber.isRoman() && secondNumber.isRoman()) {
 			numbersAreRoman = true;
 		}
+		
 
 	}
 
