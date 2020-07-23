@@ -38,6 +38,8 @@ public class Calculator {
 
 	private void getUserInput() {
 
+		System.out.println("a + b, 2) a - b, 3) a * b, 4) a / b");
+		System.out.println("1(I) <= a, b <= 10(X)");
 		System.out.print("insert assignment > ...");
 		
 		String input = scanner.nextLine();
@@ -48,10 +50,7 @@ public class Calculator {
 		operation = number[1].charAt(0);
 		
 		a=firstNumber.getIndex();
-		System.out.println(a);
-		
 		b=secondNumber.getIndex();
-		System.out.println(b);
 		
 		if (firstNumber.isArabic() && secondNumber.isArabic()) {
 			numbersAreArabic = true;
